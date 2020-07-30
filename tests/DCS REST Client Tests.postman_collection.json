@@ -1,0 +1,674 @@
+{
+	"info": {
+		"_postman_id": "3208e2bf-0aae-4a6b-b8cc-5c8aa958d0d9",
+		"name": "DCS REST Client Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1st integration",
+			"item": [
+				{
+					"name": "internal",
+					"item": [
+						{
+							"name": "Service status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_INTERNAL}}:{{PORT}}/",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_INTERNAL}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Start signalling topics",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_INTERNAL}}:{{PORT}}/dcs/start",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_INTERNAL}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"dcs",
+										"start"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop signalling topics",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_INTERNAL}}:{{PORT}}/dcs/stop",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_INTERNAL}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"dcs",
+										"stop"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c45e6fbe-c9b0-45b9-b394-c8aa3a92dc91",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "69053ff1-be8f-4de2-b926-88dabc15fa90",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "5tonic",
+					"item": [
+						{
+							"name": "Service status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_5TONIC}}:{{PORT}}/",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_5TONIC}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Start signalling topics",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_5TONIC}}:{{PORT}}/dcs/start",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_5TONIC}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"dcs",
+										"start"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop signalling topics",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_5TONIC}}:{{PORT}}/dcs/stop",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_5TONIC}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"dcs",
+										"stop"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "turin",
+					"item": [
+						{
+							"name": "Service status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_TURIN}}:{{PORT}}/",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_TURIN}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Start signalling topics",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_TURIN}}:{{PORT}}/dcs/start",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_TURIN}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"dcs",
+										"start"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop signalling topics",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_TURIN}}:{{PORT}}/dcs/stop",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_TURIN}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"dcs",
+										"stop"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "2nd integration",
+			"item": [
+				{
+					"name": "internal",
+					"item": [
+						{
+							"name": "Service status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_INTERNAL}}:{{PORT}}/",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_INTERNAL}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Start signalling topics",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_INTERNAL}}:{{PORT}}/portal/dcs/start_signalling",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_INTERNAL}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"portal",
+										"dcs",
+										"start_signalling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop signalling topics",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_INTERNAL}}:{{PORT}}/portal/dcs/stop_signalling",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_INTERNAL}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"portal",
+										"dcs",
+										"stop_signalling"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ca772cad-e76c-41b0-9376-d4471c1fccd5",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "738cd7eb-634b-46c8-a760-b06285fc90bc",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "5tonic",
+					"item": [
+						{
+							"name": "Service status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_5TONIC}}:{{PORT}}/",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_5TONIC}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Start signalling topics",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_5TONIC}}:{{PORT}}/portal/dcs/start_signalling",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_5TONIC}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"portal",
+										"dcs",
+										"start_signalling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop signalling topics",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_5TONIC}}:{{PORT}}/portal/dcs/stop_signalling",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_5TONIC}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"portal",
+										"dcs",
+										"stop_signalling"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "turin",
+					"item": [
+						{
+							"name": "Service status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_TURIN}}:{{PORT}}/",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_TURIN}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Start signalling topics",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_TURIN}}:{{PORT}}/portal/dcs/start_signalling",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_TURIN}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"portal",
+										"dcs",
+										"start_signalling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stop signalling topics",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{PROTOCOL}}://{{IP_TURIN}}:{{PORT}}/portal/dcs/stop_signalling",
+									"protocol": "{{PROTOCOL}}",
+									"host": [
+										"{{IP_TURIN}}"
+									],
+									"port": "{{PORT}}",
+									"path": [
+										"portal",
+										"dcs",
+										"stop_signalling"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ee504b36-1744-4bab-8896-7631afc12ce0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "7796013d-62df-4d48-903e-90060b051d56",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a45000da-c3ac-4694-864e-ed72537799af",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0e4e8c61-e3b5-4e02-9e02-af9d65801ff0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

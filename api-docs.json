@@ -1,0 +1,60 @@
+{
+    "definitions": {},
+    "info": {
+        "title": "DCS REST API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "description": "",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "summary": "Get status."
+            }
+        },
+        "/portal/dcs/start_signalling/": {
+            "post": {
+                "description": "",
+                "responses": {
+                    "201": {
+                        "description": "accepted request"
+                    },
+                    "400": {
+                        "description": "error processing the request"
+                    }
+                },
+                "summary": "Start signalling topics."
+            }
+        },
+        "/portal/dcs/stop_signalling/": {
+            "delete": {
+                "description": "",
+                "responses": {
+                    "201": {
+                        "description": "accepted request"
+                    },
+                    "400": {
+                        "description": "error processing the request"
+                    }
+                },
+                "summary": "Stop signalling topics."
+            }
+        },
+        "/spec": {
+            "get": {
+                "description": "",
+                "responses": {
+                    "swagger": {
+                        "description": "swagger specification"
+                    }
+                },
+                "summary": "Get swagger specification."
+            }
+        }
+    },
+    "swagger": "2.0"
+}
