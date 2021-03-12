@@ -8,15 +8,7 @@ Default DCM IP address is localhost, default port is 8091, and default log level
 
 ## Application API
 
-The REST API provided by the `dcs_rest_client.py` script implements the following interface:
-
-| Endpoint | Description | Input | Output |
-| --- | --- | --- | --- |
-| GET / | Check if this logic is running or not | - | 200 - OK |
-| POST /portal/dcs/start_signalling | Create signalling topics and start listening to them | - | 201 - accepted, 400 - error parsing request |
-| DELETE /portal/dcs/stop_signalling | Delete signalling topics and stop listening to them | - | 201 - accepted, 400 - error parsing request |
-
-(TODO - OpenAPI)
+The REST API provided by the `dcs_rest_client.py` can be seen in the corresponding api-docs files in this repository.
 
 ## Steps to be followed
 
